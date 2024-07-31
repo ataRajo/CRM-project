@@ -1,0 +1,16 @@
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: red;
+    text-decoration: none;
+}
