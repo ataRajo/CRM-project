@@ -5,16 +5,31 @@ import { Route, Routes } from 'react-router-dom'
 import Register from './Components/NavBar/Register'
 import Log from './Components/NavBar/Log'
 import About from './Components/NavBar/About'
+import User from './Components/NavBar/UserProfile/User'
 
 
 
 
 
 const App = () => {
+  const donor = {
+
+    name: 'Ata Rajouleh',
+    avatar: 'https://via.placeholder.com/60',
+    bio: 'community supporter',
+    email: 'atarajouleh7@gmail.com',
+    phone: '0935498289',
+    donations: [
+      'Donation to Health Fund - $500',
+      'Donation to Education Fund - $300',
+      'Donation to Community Fund - $200',
+    ]
+  }
   return (
 
     <div className='Container'>
       <NavBar />
+      <User donor={donor} />
       <Routes>
         <Route path='/' element={<About
           info="اهلا وسهلا بكم في جمعية الهداية الاسلامية "
@@ -58,6 +73,8 @@ const App = () => {
           info="انشاء حساب"
           Lin="تسجيل الدخول"
         />} />
+
+
 
       </Routes>
 

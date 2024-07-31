@@ -1,0 +1,176 @@
+/*
+.userc {
+    display: flex;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    transition: transform 0.2s;
+}
+
+.user-profile:hover {
+    transform: scale(1.05);
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.user-info {
+    margin-left: 20px;
+}
+
+.user-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.user-info p {
+    margin: 5px 0 0;
+    color: #666;
+}
+*/
+.dashuser {
+    background-color: #1a1a1a;
+    padding: 15px;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+}
+
+.dashuser ul {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.dashuser ul li {
+    margin: 20px 0px;
+    padding: 15px;
+}
+
+.dashuser ul li {
+    text-decoration: none;
+}
+
+.donor-profile {
+    background-color: #1a1a1a;
+    color: #00bfff;
+    border: 1px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 80px auto;
+    /*centre it */
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+
+
+.donor-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.donor-avatar {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.donor-header h2 {
+    margin: 0;
+    font-size: 1.8em;
+
+}
+
+.donor-bio {
+    margin-bottom: 20px;
+    color: #00bfff;
+    text-align: center;
+}
+
+.donor-contact h3,
+.donor-donations h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #00bfff;
+
+}
+
+.uinfo {
+    text-align: center;
+    margin-top: 20px;
+    padding: 4px;
+}
+
+.donor-contact p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.donor-donations ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #666;
+}
+
+.donor-donations ul li {
+    margin-bottom: 5px;
+    font-size: 23px;
+    padding: 7px;
+}
+
+.animated-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #00bfff;
+    border-radius: 50%;
+    position: relative;
+    left: 94%;
+    animation: moveCircle 2s linear infinite;
+}
+
+.animated-circle ::before,
+.animated-circle::after {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #00bfff;
+}
+
+
+@keyframes moveCircle {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
