@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <nav>
             <NavLink
-                to="/"
+                to="/About"
                 className={({ isActive }) =>
                     isActive ? "active" : ""
                 }

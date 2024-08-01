@@ -56,7 +56,7 @@ const User = ({ donor }) => {
 
                         <li><Link to='./Track'>Track</Link></li>
                         <li><Link to='./Campgain'>Campgain</Link></li>
-                        <li><Link to='./Contact'>ContactUs</Link></li>
+                        <li><Link to='https://www.facebook.com/alhidayacharity/'>ContactUs</Link></li>
                         <li><Link to='./Messages'>Messages</Link></li>
                         <li><Link to='./Record'>Record</Link></li>
 

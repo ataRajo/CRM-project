@@ -1,0 +1,131 @@
+/*
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 10% 10% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+*/
+
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center the line vertically */
+    top: 30%;
+    position: absolute;
+    left: 32%;
+    width: 600px;
+    height: 200px;
+    background-color: #1a1a1a;
+    color: #00bfff;
+    border: 1px solid #333;
+}
+
+
+
+.circle {
+    width: 40px;
+    padding: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 30px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.marked {
+    background-color: #00bfff;
+}
+
+.explian {
+    position: relative;
+}
+
+.first {
+    position: absolute;
+    top: -2%;
+    left: 0%;
+    text-align: center;
+    align-items: center;
+    font-size: 19px;
+    margin: 5px;
+
+
+}
+
+.sec {
+    position: absolute;
+    top: -2%;
+    left: 30%;
+    text-align: center;
+    align-items: center;
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.third {
+    position: absolute;
+    top: -2%;
+    left: 55%;
+    text-align: center;
+    align-items: center;
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.fourth {
+    position: absolute;
+    top: -2%;
+    left: 70%;
+    text-align: center;
+    align-items: center;
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin: 5px;
+
+}

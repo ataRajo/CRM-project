@@ -6,6 +6,9 @@ import Register from './Components/NavBar/Register'
 import Log from './Components/NavBar/Log'
 import About from './Components/NavBar/About'
 import User from './Components/NavBar/UserProfile/User'
+import RecordDonations from './Components/RecordDonations/RecordDonations'
+import Campaign from './Components/Campgain/Campgain'
+import Track from './Components/Track/Track'
 
 
 
@@ -29,9 +32,9 @@ const App = () => {
 
     <div className='Container'>
       <NavBar />
-      <User donor={donor} />
       <Routes>
-        <Route path='/' element={<About
+
+        <Route path='/About' element={<About
           info="اهلا وسهلا بكم في جمعية الهداية الاسلامية "
           details='
         تقع هذه الجمعية في العاصمة دمشق خلف ملعب نادي الوحدة
@@ -69,28 +72,20 @@ const App = () => {
           title="تسجيل الدخول"
           labelU="الحساب"
           labelp="كلمة السر"
-          descF="هل نسيت كلمة السر ؟"
           info="انشاء حساب"
           Lin="تسجيل الدخول"
         />} />
-
-
-
+        <Route path='/User' element={<User donor={donor} />} />
+        <Route path='/user/Record' element={<RecordDonations />} />
+        <Route path='/user/Campgain' element={<Campaign />} />
+        <Route path='/user/Track' element={<Track />} />
       </Routes>
 
       {
-
-
-
-
       }
-
-
     </div>
-
-
   )
-
 }
 
 export default App
+{/*Commit update : created user profile wuth his dash*/ }

@@ -32,7 +32,8 @@ export default function Log({ title, labelU, labelp, descF, info, Lin }) {
 
                     <form>
                         {/* Your login form fields go here */}
-                        <button type="submit">{Lin}</button>
+
+                        <Link to='/User'> <button type="submit">{Lin}</button> </Link>
                     </form>
                     <p> <Link to="/Register">{info}</Link></p>
 
