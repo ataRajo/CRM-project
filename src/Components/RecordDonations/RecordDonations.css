@@ -1,6 +1,7 @@
 .donation-container {
-    background-color: #f4f4f9;
-    border: 1px solid #ddd;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
     border-radius: 8px;
     padding: 20px;
     max-width: 500px;
@@ -10,7 +11,7 @@
 
 .donation-title {
     font-size: 2em;
-    color: #333;
+    color: #00bfff;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -23,7 +24,7 @@
 .form-label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333;
+    color: #00bfff;
 }
 
 .form-input,
@@ -41,7 +42,7 @@
 }
 
 .form-button {
-    background-color: #4caf50;
+    background-color: #00bfff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -52,5 +53,5 @@
 }
 
 .form-button:hover {
-    background-color: #45a049;
+    background-color: #333;
 }
