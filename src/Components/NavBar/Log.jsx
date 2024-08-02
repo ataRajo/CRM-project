@@ -24,7 +24,7 @@ export default function Log({ title, labelU, labelp, descF, info, Lin }) {
                 <div className='Password'>
 
                     <label className='passl'>{labelp}</label>
-                    <input placeholder='PassWord' required />
+                    <input placeholder='Password' type='password' required />
 
                 </div>
 

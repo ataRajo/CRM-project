@@ -76,12 +76,12 @@ const User = ({ donor }) => {
                 <p>{donor.bio}</p>
             </div>
             <div className="donor-contact">
-                <h3>Contact Information :</h3>
+                <h3>معلومات التواصل :</h3>
                 <p className='uinfo'>Email: {donor.email}</p>
                 <p className='uinfo'>Phone: {donor.phone}</p>
             </div>
             <div className="donor-donations">
-                <h3>Donation History</h3>
+                <h3>التبرعات السابقة</h3>
                 <ul>
                     {donor.donations.map((donation, index) => (
                         <li key={index}>{donation}</li>

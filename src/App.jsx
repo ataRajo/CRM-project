@@ -18,15 +18,15 @@ import Logout from './Components/Logout'
 const App = () => {
   const donor = {
 
-    name: 'Ata Rajouleh',
+    name: 'علي الاحمد',
     avatar: 'https://via.placeholder.com/60',
-    bio: 'community supporter',
-    email: 'atarajouleh7@gmail.com',
+    bio: 'رجل أعمال',
+    email: 'aliahmad@gmail.com',
     phone: '0935498289',
     donations: [
-      'Donation to Health Fund - $500',
-      'Donation to Education Fund - $300',
-      'Donation to Community Fund - $200',
+      'تبرع ل مشاكل صحية - $500',
+      'تبرع ل اكمال التعليم - $300',
+      ' تبرع من خلال النقود- $200',
     ]
   }
   return (

@@ -121,10 +121,10 @@
 }
 
 .uinfo {
-    text-align: center;
-    margin-top: 20px;
+    text-align: end;
     padding: 4px;
 }
+
 
 .donor-contact p {
     margin: 5px 0;
@@ -137,10 +137,15 @@
     color: #666;
 }
 
+.donor-donations {
+    direction: rtl;
+}
+
 .donor-donations ul li {
     margin-bottom: 5px;
     font-size: 23px;
     padding: 7px;
+
 }
 
 .animated-circle {

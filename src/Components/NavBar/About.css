@@ -1,15 +1,14 @@
-/*
 .about {
-    display: none;
+    padding: 10px;
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
 }
-*/
-
 
 h1 {
-    direction: rtl;
     color: red;
+    text-transform: capitalize;
     text-align: center;
-    margin-top: 70px;
 }
 
 p {
@@ -17,4 +16,11 @@ p {
     margin-top: 30px;
     direction: rtl;
     letter-spacing: 1.3px;
+    text-align: center;
+    align-self: center;
+}
+
+img {
+    width: 400px;
+    border-radius: 12px;
 }

@@ -26,10 +26,10 @@ const Track = () => {
             */ }
             <div className='explain'>
 
-                <p className='first'>the  <br /> Request Done </p>
-                <p className='sec'>Accepted <br />By The Crm</p>
-                <p className='third'>on the <br />....way</p>
-                <p className='fourth'>The Donation <br />  !! Arrived  </p>
+                <p className='first'>  <br />تم تقديم طلب التبرع</p>
+                <p className='sec'>تمت الموافقة <br /> من قبل الجمعية</p>
+                <p className='third'>في حالة انتظار</p>
+                <p className='fourth'>عمليةالتبرع <br />وصلت !! </p>
 
                 {/*
                  <h1>Thanks for Your Donation  </h1>

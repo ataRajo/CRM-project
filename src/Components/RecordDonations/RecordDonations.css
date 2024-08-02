@@ -24,7 +24,6 @@
 .form-label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #00bfff;
 }
 
 .form-input,
@@ -47,8 +46,12 @@
 }
 
 .form-label {
-    color: #00bfff;
     height: 20px;
+}
+
+label {
+    color: #00bfff;
+
 }
 
 #peoples {
