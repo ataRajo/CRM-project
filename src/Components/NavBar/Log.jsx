@@ -1,8 +1,11 @@
 import React from 'react'
 import './Log.css'
 import { Link } from 'react-router-dom'
+import NavBar from './NavBar'
+
 export default function Log({ title, labelU, labelp, descF, info, Lin }) {
 
+    <NavBar />
 
 
     return (

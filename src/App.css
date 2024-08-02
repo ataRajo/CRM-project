@@ -1,14 +1,3 @@
 body {
-  background: red;
-  animation: mymove 2s infinite;
-}
-
-@keyframes mymove {
-  from {
-    background-color: rgba(104, 115, 231, 0.991);
-  }
-
-  to {
-    background-color: rgba(29, 29, 224, 0.824);
-  }
+  background: rgb(67, 87, 152);
 }

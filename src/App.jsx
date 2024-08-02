@@ -9,6 +9,7 @@ import User from './Components/NavBar/UserProfile/User'
 import RecordDonations from './Components/RecordDonations/RecordDonations'
 import Campaign from './Components/Campgain/Campgain'
 import Track from './Components/Track/Track'
+import Logout from './Components/Logout'
 
 
 
@@ -31,8 +32,8 @@ const App = () => {
   return (
 
     <div className='Container'>
-      <NavBar />
       <Routes>
+        <Route path='/' element={<NavBar />} />
 
         <Route path='/About' element={<About
           info="اهلا وسهلا بكم في جمعية الهداية الاسلامية "
@@ -79,6 +80,7 @@ const App = () => {
         <Route path='/user/Record' element={<RecordDonations />} />
         <Route path='/user/Campgain' element={<Campaign />} />
         <Route path='/user/Track' element={<Track />} />
+        <Route path='/user/Logout' element={<NavBar />} />
       </Routes>
 
       {

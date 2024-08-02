@@ -1,6 +1,9 @@
 import React from 'react'
 import './Register.css'
 import { Link } from 'react-router-dom';
+import NavBar from './NavBar';
+<NavBar />
+
 export default function Register({ reg, explain, first, last, email, password, confirm, sub, already, sign }) {
     return (
         <form className="form">
