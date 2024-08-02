@@ -1,0 +1,30 @@
+/* src/components/ReportList.css */
+
+.report-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-left: 300px;
+    margin-top: 200px;
+
+}
+
+.report {
+    border: 1px solid #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+
+}
+
+.report h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.report .date {
+    color: #888;
+    font-size: 0.9em;
+}

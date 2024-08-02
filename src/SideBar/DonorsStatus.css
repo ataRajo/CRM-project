@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    height: max-content;
+}
+
+.Dl {
+    text-align: center;
+    color: red;
+}
+
+.donor-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.donor-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.donor-list li:last-child {
+    border-bottom: none;
+}
+
+.donor-name {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.donor-status {
+    color: #28a745;
+}
+
+.donor-status.inactive {
+    color: red;
+}
+
+.donor-date {
+    color: #6c757d;
+}
+
+.donor-amount {
+    color: #17a2b8;
+}
+
+.donor-list li:hover {
+    background-color: #e2e6ea;
+    animation: backgroundColorChange 0.5s ease-in-out;
+}
+
+@keyframes backgroundColorChange {
+    0% {
+        background-color: #fff;
+    }
+
+    50% {
+        background-color: #e2e6ea;
+    }
+
+    100% {
+        background-color: #fff;
+    }
+}
