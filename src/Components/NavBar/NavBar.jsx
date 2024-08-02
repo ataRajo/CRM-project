@@ -10,7 +10,7 @@ const NavBar = () => {
                     isActive ? "active" : ""
                 }
             >
-                About
+                حول الجمعية
             </NavLink>
 
 
@@ -20,7 +20,7 @@ const NavBar = () => {
                     isActive ? "active" : ""
                 }
             >
-                logIn
+                تسجيل الدخول
             </NavLink>
 
 
@@ -30,7 +30,7 @@ const NavBar = () => {
                     isActive ? "active" : ""
                 }
             >
-                Register
+                انشاء حساب
             </NavLink>
             <NavLink
                 to='https://www.facebook.com/alhidayacharity/'
@@ -38,7 +38,7 @@ const NavBar = () => {
                     isActive ? "active" : ""
                 }
             >
-                contact
+                تواصل معنا
             </NavLink>
 
         </nav>
