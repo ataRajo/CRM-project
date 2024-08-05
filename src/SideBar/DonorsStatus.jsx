@@ -11,7 +11,7 @@ const donors = [
 
 const DonorsStatus = () => {
     return (
-        <div className="container">
+        <div className="containerS">
             <h1 className='Dl'>Donor List</h1>
             <ul className="donor-list">
                 {donors.map((donor, index) => (

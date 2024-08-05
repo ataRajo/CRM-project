@@ -18,7 +18,7 @@ const Recipcienst = () => {
     };
 
     return (
-        <div className="container">
+        <div className="containerR">
             <h1>Recipient List</h1>
             <ul className="recipient-list">
                 {recipients.map((recipient, index) => (

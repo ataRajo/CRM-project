@@ -1,63 +1,148 @@
 import React from 'react';
 import './Requests.css'
-{/*
-import { FaPenToSquare } from "react-icons/fa6";
 
-<FaPenToSquare className='pen' />    
-    */}
-import { FaPen } from 'react-icons/fa'; // Importing the pen icon from Font Awesome via React Icons
-
-
-const Requests = ({ header, nameO, Dorder, stateO, typeO }) => {
-    const requests = [
-        { name: 'طلب 1', applicant: 'مقدم 1', status: 'مقبول', type: 'نوع 1' },
-        { name: 'طلب 2', applicant: 'مقدم 2', status: 'معلق', type: 'نوع 2' },
-        { name: 'طلب 3', applicant: 'مقدم 3', status: 'مرفوض', type: 'نوع 3' },
-
-    ];
-
+const Requests = () => {
     return (
-        <div className='Card'>
-
-            <FaPen className='pen' size={15} color="#fff" />
-            <FaPen size={15} color="#fff" className='pen1' />
-            <FaPen size={15} color="#fff" className='pen2' />
-            <FaPen size={15} color="#fff" className='pen3' />
-            <FaPen size={15} color="#fff" className='pen4' />
-            <FaPen size={15} color="#fff" className='pen5' />
-            <FaPen size={15} color="#fff" className='pen6' />
-            <FaPen size={15} color="#fff" className='pen7' />
-            <FaPen size={15} color="#fff" className='pen8' />
+        <div class="container-req">
 
 
+            <div class="alert alert-danger">
+            </div>
+            <div class="alert alert-success">
+            </div>
 
-            <div className="requests">
-                <h1>{header}</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>{nameO}</th>
-                            <th>{Dorder}</th>
-                            <th>{stateO}</th>
-                            <th>{typeO}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {requests.map((request, index) => (
-                            <tr key={index}>
-                                <td>{request.name}</td>
-                                <td>{request.applicant}</td>
-                                <td>{request.status}</td>
-                                <td>{request.type}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+            <table class="min-w-full bg-white border border-gray-300">
+                <thead>
+                    <tr>
+                        <th class="py-2 border">User</th>
+                        <th class="py-2 border">Recipient</th>
+                        <th class="py-2 border">Donation Type</th>
+                        <th class="py-2 border">Donation Date</th>
+                        <th class="py-2 border">Amount</th>
+                        <th class="py-2 border">Status</th>
+                        <th class="py-2 border">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border px-4 py-2">Ali</td>
+                        <td class="border px-4 py-2">Ahmad</td>
+                        <td class="border px-4 py-2">surgery</td>
+                        <td class="border px-4 py-2">2024/11/15</td>
+                        <td class="border px-4 py-2">500$</td>
+                        <td class="border px-4 py-2">Active</td>
+                        <td class="border px-4 py-2">
+                            <form action="{{ route('admin.donations.updateStatus', $donation->DonationID) }}" method="POST">
+                                <select name="status" class="form-control">
+                                    <option value='Accept'>Accept</option>
+                                    <option value='Pending'>Pending</option>
+                                    <option value='Decline'>Decline</option>
+                                </select>
+                                <button type="submit" class="btn btn-primary mt-2">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="border px-4 py-2">alaa</td>
+                        <td class="border px-4 py-2">yousef</td>
+                        <td class="border px-4 py-2">Money</td>
+                        <td class="border px-4 py-2">2024/2/15</td>
+                        <td class="border px-4 py-2">100$</td>
+                        <td class="border px-4 py-2">InActive</td>
+                        <td class="border px-4 py-2">
+                            <form action="{{ route('admin.donations.updateStatus', $donation->DonationID) }}" method="POST">
+                                <select name="status" class="form-control">
+                                    <option value='Accept'>Accept</option>
+                                    <option value='Pending'>Pending</option>
+                                    <option value='Decline'>Decline</option>
+                                </select>
+                                <button type="submit" class="btn btn-primary mt-2">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">fares</td>
+                        <td class="border px-4 py-2">molham</td>
+                        <td class="border px-4 py-2">Money</td>
+                        <td class="border px-4 py-2">2024/9/15</td>
+                        <td class="border px-4 py-2">250$</td>
+                        <td class="border px-4 py-2">Active</td>
+                        <td class="border px-4 py-2">
+                            <form action="{{ route('admin.donations.updateStatus', $donation->DonationID) }}" method="POST">
+                                <select name="status" class="form-control">
+                                    <option value='Accept'>Accept</option>
+                                    <option value='Pending'>Pending</option>
+                                    <option value='Decline'>Decline</option>
+                                </select>
+                                <button type="submit" class="btn btn-primary mt-2">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">belal</td>
+                        <td class="border px-4 py-2">jalal</td>
+                        <td class="border px-4 py-2">surgery</td>
+                        <td class="border px-4 py-2">2024/1/15</td>
+                        <td class="border px-4 py-2">200$</td>
+                        <td class="border px-4 py-2">InActive</td>
+                        <td class="border px-4 py-2">
+                            <form action="{{ route('admin.donations.updateStatus', $donation->DonationID) }}" method="POST">
+                                <select name="status" class="form-control">
+                                    <option value='Accept'>Accept</option>
+                                    <option value='Pending'>Pending</option>
+                                    <option value='Decline'>Decline</option>
+                                </select>
+                                <button type="submit" class="btn btn-primary mt-2">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">saif</td>
+                        <td class="border px-4 py-2">omar</td>
+                        <td class="border px-4 py-2">surgery</td>
+                        <td class="border px-4 py-2">2024/5/15</td>
+                        <td class="border px-4 py-2">100$</td>
+                        <td class="border px-4 py-2">InActive</td>
+                        <td class="border px-4 py-2">
+                            <form action="{{ route('admin.donations.updateStatus', $donation->DonationID) }}" method="POST">
+                                <select name="status" class="form-control">
+                                    <option value='Accept'>Accept</option>
+                                    <option value='Pending'>Pending</option>
+                                    <option value='Decline'>Decline</option>
+                                </select>
+                                <button type="submit" class="btn btn-primary mt-2">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">saber</td>
+                        <td class="border px-4 py-2">rami</td>
+                        <td class="border px-4 py-2">Money</td>
+                        <td class="border px-4 py-2">2024/2/15</td>
+                        <td class="border px-4 py-2">350$</td>
+                        <td class="border px-4 py-2">Active</td>
+                        <td class="border px-4 py-2">
+                            <form action="{{ route('admin.donations.updateStatus', $donation->DonationID) }}" method="POST">
+                                <select name="status" class="form-control">
+                                    <option value='Accept'>Accept</option>
+                                    <option value='Pending'>Pending</option>
+                                    <option value='Decline'>Decline</option>
+                                </select>
+                                <button type="submit" class="btn btn-primary mt-2">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+            <div class="mt-4">
             </div>
         </div>
-
-    );
-
+    )
 }
 
-export default Requests;
+
+
+export default Requests

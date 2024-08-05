@@ -13,7 +13,7 @@ const donors = [
 
 const Donors = () => {
     return (
-        <div className="container">
+        <div className="containerD">
             <div className='anaween'>
                 <h2>Donor List</h2>
                 <h2>Donor Type</h2>

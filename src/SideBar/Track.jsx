@@ -60,16 +60,13 @@ const Track = () => {
     const handleClick = (index) => {
         setMarkedIndex(index);
     };
-    <div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-    </div>
+
     return (
 
+        <div className='shape'>
 
-        <div className="line-container">
-            {/*  Array.from({ length: numberOfCircles }): 
+            <div className="line-container">
+                {/*  Array.from({ length: numberOfCircles }): 
             Creates an array with numberOfCircles elements. Array.from is used here to generate an array with
              a specific length.
 
@@ -77,17 +74,18 @@ const Track = () => {
 
             */ }
 
-            {Array.from({ length: numberOfCircles }).map((_, index) => (
-                <div
-                    key={index}
-                    className={`circle ${index === markedIndex ? 'marked' : ''}`}
-                    //تغيير الوان الدوائر
+                {Array.from({ length: numberOfCircles }).map((_, index) => (
+                    <div
+                        key={index}
+                        className={`circle ${index === markedIndex ? 'marked' : ''}`}
+                        //تغيير الوان الدوائر
 
-                    onClick={() => handleClick(index)}
-                />
+                        onClick={() => handleClick(index)}
+                    />
 
-            ))}
+                ))}
 
+            </div>
         </div>
 
     );

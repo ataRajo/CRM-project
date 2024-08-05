@@ -14,23 +14,12 @@ import Track from './SideBar/Track';
 import { useState } from 'react';
 import ReportForm from './FinancialManager/ReportForm';
 import ReportList from './FinancialManager/ReportList';
-import Statics from './CharityStatistics/Statics';
+import DashS from './DashS';
 
-{/*
-  
-import { LiaAddressBookSolid } from "react-icons/lia";
-import { FaPeopleRobbery } from "react-icons/fa6";
-import { MdRequestPage } from "react-icons/md";
-import { GrStatusWarning } from "react-icons/gr";
-import { FcInfo } from "react-icons/fc";
-import { MdEventAvailable } from "react-icons/md";
-import { MdEmojiPeople } from "react-icons/md";
-import { MdAccountCircle } from "react-icons/md";
-import { PiStepsFill } from "react-icons/pi";
-import { FaPenToSquare } from "react-icons/fa6";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-  */ }
+
+
+
 
 
 const App = () => {
@@ -41,16 +30,18 @@ const App = () => {
   return (
 
     <div className="cont">
-
       <div className="App">
         <ReportForm addReport={addReport} />
         <ReportList reports={reports} />
 
       </div>
 
-      <Statics precentage='هذه الاعداد هي النسبة المئوية ل التبرع للجمعية' />
 
-      <div className="content">
+
+      <div className='dash'>
+        <DashS />
+      </div>
+      <div className='components'>
 
         <Routes>
 
@@ -73,15 +64,6 @@ const App = () => {
 
 
           <Route path="/Campgain" element={<Campaign />} />
-
-          {/*
-                <Route path="/Record" element={<RecordDonations />} />
-          <Route path='/financialAccount' element={<FinancalAcc />} />
-          <Route path='/FinancialManager' element={<FinancialManager />} />
-
-              */ }
-
-
           <Route path="/Donors" element={<Donors />} />
           <Route path="/Recipcienst" element={<Recipcienst />} />
           <Route path='/DonorsStatus' element={<DonorStatus />} />
@@ -91,11 +73,9 @@ const App = () => {
 
           {/* يمكنك إضافة مسارات أخرى هنا */}
         </Routes>
-
       </div>
-    </div >
 
-
+    </div>
   );
 }
 
