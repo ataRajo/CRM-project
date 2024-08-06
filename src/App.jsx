@@ -80,7 +80,12 @@ const App = () => {
         <Route path='/user/Record' element={<RecordDonations />} />
         <Route path='/user/Campgain' element={<Campaign />} />
         <Route path='/user/Track' element={<Track />} />
-        <Route path='/user/Logout' element={<NavBar />} />
+        <Route path='/user/Logout' element={<Log
+          title="تسجيل الدخول"
+          labelU="الحساب"
+          labelp="كلمة السر"
+          info="انشاء حساب"
+          Lin="تسجيل الدخول" />} />
       </Routes>
 
       {
@@ -92,4 +97,5 @@ const App = () => {
 export default App
 {/*Commit update : created user profile wuth his dash
   Commit v1 : completed the side bar and change between the pages
+  Commit Log :move from log out to log in
   */ }
