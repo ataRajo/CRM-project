@@ -10,7 +10,7 @@ const recipients = [
     { name: 'Eve Red', received: [{ amount: '$300', date: '2024-07-05' }, { amount: '$400', date: '2024-08-20' }] },
 ];
 
-const Recipcienst = () => {
+const Recipcienst = ({ RecipientList }) => {
     const [selectedRecipient, setSelectedRecipient] = useState(null);
 
     const handleClick = (recipient) => {
@@ -19,7 +19,7 @@ const Recipcienst = () => {
 
     return (
         <div className="containerR">
-            <h1>Recipient List</h1>
+            <h1>{RecipientList}</h1>
             <ul className="recipient-list">
                 {recipients.map((recipient, index) => (
                     <li key={index} onClick={() => handleClick(recipient)}>

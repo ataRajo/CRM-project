@@ -14,15 +14,16 @@ body {
     border-radius: 8px;
 }
 
-h1 {
+.containerR h1 {
     text-align: center;
-    color: #333;
+    color: #f80101;
 }
 
 h2 {
     color: red;
     margin-bottom: 4px;
     padding: 5px;
+
 }
 
 .recipient-list {

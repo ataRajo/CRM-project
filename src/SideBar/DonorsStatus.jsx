@@ -9,10 +9,10 @@ const donors = [
     { name: 'Alex Brown', status: 'Inactive', lastDonation: { amount: '$150', date: '2024-05-30' } },
 ];
 
-const DonorsStatus = () => {
+const DonorsStatus = ({ DonorList }) => {
     return (
         <div className="containerS">
-            <h1 className='Dl'>Donor List</h1>
+            <h1 className='Dl'>{DonorList}</h1>
             <ul className="donor-list">
                 {donors.map((donor, index) => (
                     <li key={index}>

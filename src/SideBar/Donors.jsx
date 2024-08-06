@@ -11,13 +11,13 @@ const donors = [
 
 ];
 
-const Donors = () => {
+const Donors = ({ list, Dtype, Date }) => {
     return (
         <div className="containerD">
             <div className='anaween'>
-                <h2>Donor List</h2>
-                <h2>Donor Type</h2>
-                <h2>Date of Donor</h2>
+                <h2>{list}</h2>
+                <h2>{Dtype}</h2>
+                <h2>{Date}</h2>
             </div>
 
             <ul className="donor-list">

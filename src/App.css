@@ -79,11 +79,13 @@
 }
 
 .dash {
-
     display: flex;
-
 }
 
+.CAmpg {
+    display: flex;
+    flex-direction: column;
+}
 
 .cont {
     display: flex;
@@ -93,4 +95,9 @@
     top: -22%;
     left: 40%;
 
+}
+
+.campList {
+    display: flex;
+    flex-direction: column-reverse;
 }

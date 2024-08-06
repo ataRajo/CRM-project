@@ -30,15 +30,15 @@ const DashS = () => {
                         <div className="metrics">
                             <div>
                                 <h3>Total Customers</h3>
-                                <p>25,024</p>
+                                <p>2468</p>
                             </div>
                             <div>
                                 <h3>Active Users</h3>
-                                <p>15,933</p>
+                                <p>1254</p>
                             </div>
                             <div>
                                 <h3>Sales Revenue</h3>
-                                <p>35,320</p>
+                                <p>5,320</p>
                             </div>
                         </div>
                         <div className="chart">

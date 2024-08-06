@@ -1,26 +1,42 @@
-// src/Campaign.js
-import React from 'react';
+import React, { useState } from 'react';
 import './Campgain.css';
+import { Link } from 'react-router-dom';
+const Campgain = ({ addCampaign }) => {
+    const [name, setName] = useState('');
+    const [description, setDescription] = useState('');
+
+    const newCampgain = (e) => {
+        e.preventDefault();
+        addCampaign({
+            name,
+            description,
+            date: new Date().toLocaleDateString()
+        });
 
 
-const Campaign = () => {
+        setName('');
+        setDescription('');
+
+    };
+
     return (
-        <div className="campaign-container">
-            <h1 className="campaign-title">CRM Campaign</h1>
-            <p className="campaign-description">
-                Our latest campaign aims to enhance customer relationships by leveraging advanced CRM tools.
-            </p>
-            <div className="campaign-details">
-                <h2>Campaign Details</h2>
-                <ul>
-                    <li>Target Audience: Existing Customers</li>
-                    <li>Duration: 3 Months</li>
-                    <li>Goals: Increase customer satisfaction and retention</li>
-                </ul>
-            </div>
-        </div>
+        <form className="containerC" onSubmit={newCampgain}>
+            <input
+                type="text"
+                placeholder="Campaign Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+            />
+            <textarea
+                placeholder="Campaign Description"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                required
+            />
+            <button type="submit">Create Campaign</button>
+        </form>
     );
 };
 
-export default Campaign;
-
+export default Campgain;
