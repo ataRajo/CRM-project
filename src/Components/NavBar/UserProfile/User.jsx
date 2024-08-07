@@ -44,6 +44,7 @@ export default User
 import React from 'react';
 import './User.css';
 import { Link } from 'react-router-dom';
+import photo from '../photo/charity.jpg'
 
 const User = ({ donor }) => {
     return (
@@ -61,12 +62,14 @@ const User = ({ donor }) => {
                         <li><Link to='./Record'>Record</Link></li>
                         <li><Link to='./Logout'>Logout</Link></li>
 
+
                     </ul>
 
                 </nav>
             </div>
 
             <div className="donor-header">
+                <img className='iconCharity' src={photo} alt='Cahrity Photo' />
                 <div className="animated-circle"></div>
 
                 <img src={donor.avatar} alt="Donor Avatar" className="donor-avatar" />

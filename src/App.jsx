@@ -10,6 +10,7 @@ import RecordDonations from './Components/RecordDonations/RecordDonations'
 import Campaign from './Components/Campgain/Campgain'
 import Track from './Components/Track/Track'
 import Logout from './Components/Logout'
+import Messages from './Components/Messages/Messages'
 
 
 
@@ -86,7 +87,9 @@ const App = () => {
           labelp="كلمة السر"
           info="انشاء حساب"
           Lin="تسجيل الدخول" />} />
+        <Route path='/user/Messages' element={<Messages />} />
       </Routes>
+
 
       {
       }
@@ -98,4 +101,5 @@ export default App
 {/*Commit update : created user profile wuth his dash
   Commit v1 : completed the side bar and change between the pages
   Commit Log :move from log out to log in
+  commit Messages : added Messages interface with Routing :)
   */ }

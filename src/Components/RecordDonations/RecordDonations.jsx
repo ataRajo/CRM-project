@@ -20,6 +20,7 @@ const RecordDonations = () => {
     };
 
     return (
+
         <div className="donation-container">
             <h1 className="donation-title">تقديم طلب للتبرع</h1>
             <form className="donation-form" onSubmit={handleSubmit}>
@@ -72,6 +73,7 @@ const RecordDonations = () => {
                 <button type="submit" className="form-button">Submit Donation</button>
 
             </form>
+
         </div>
 
     );

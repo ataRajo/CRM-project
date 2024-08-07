@@ -41,6 +41,13 @@
     color: #666;
 }
 */
+
+.iconCharity {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
 .dashuser {
     background-color: #1a1a1a;
     padding: 15px;
@@ -76,16 +83,14 @@
     border: 1px solid #333;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 30px;
     max-width: 600px;
     margin: 80px auto;
     /*centre it */
     font-family: Arial, sans-serif;
     cursor: pointer;
+    margin-top: 150px;
 }
-
-
-
 
 .donor-header {
     display: flex;
@@ -154,7 +159,7 @@
     background-color: #00bfff;
     border-radius: 50%;
     position: relative;
-    left: 94%;
+    left: 74%;
     animation: moveCircle 2s linear infinite;
 }
 
