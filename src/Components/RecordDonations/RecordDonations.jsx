@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './RecordDonations.css';
 import { Link } from 'react-router-dom';
+import { FaSearch } from "react-icons/fa";
+
+
 const RecordDonations = () => {
     const [donorName, setDonorName] = useState('');
     const [amount, setAmount] = useState('');
@@ -22,6 +25,9 @@ const RecordDonations = () => {
     return (
 
         <div className="donation-container">
+
+            <input className='search' type='search' placeholder='RecepcientName' />
+            <span> <FaSearch /></span>
             <h1 className="donation-title">تقديم طلب للتبرع</h1>
             <form className="donation-form" onSubmit={handleSubmit}>
                 <label className="form-label">اسم المتبرع:</label>

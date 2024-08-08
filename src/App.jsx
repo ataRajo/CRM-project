@@ -102,4 +102,6 @@ export default App
   Commit v1 : completed the side bar and change between the pages
   Commit Log :move from log out to log in
   commit Messages : added Messages interface with Routing :)
+  commit icon : added the icon in front of search bar (not pinned)
+  
   */ }

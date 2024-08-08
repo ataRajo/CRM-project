@@ -94,3 +94,27 @@ label {
 .form-button:hover {
     background-color: #333;
 }
+
+span {
+    position: absolute;
+    font-size: 20px;
+    left: 96%;
+    top: 2%;
+    cursor: pointer;
+
+}
+
+.search {
+    border: none;
+    outline: none;
+    width: 200px;
+    padding: 16px;
+    position: absolute;
+    left: 85%;
+    top: 0%;
+    background-color: #1a1a1a;
+    color: #00bfff;
+
+
+
+}
