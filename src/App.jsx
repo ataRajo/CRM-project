@@ -98,7 +98,11 @@ const App = () => {
 }
 
 export default App
-{/*Commit update : created user profile wuth his dash
+{/*
+   update (first commit) :build the project in a simple way 
+  commit v3 : updates on interfaces
+  commit v4: create user card and put data inside it 
+  Commit update : created user profile wuth his dash
   Commit v1 : completed the side bar and change between the pages
   Commit Log :move from log out to log in
   commit Messages : added Messages interface with Routing :)

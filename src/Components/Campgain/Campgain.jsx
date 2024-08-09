@@ -1,8 +1,9 @@
 // src/Campaign.js
 import React from 'react';
 import './Campgain.css';
-
-
+const handleSubmit = () => {
+    alert('تم الانتساب')
+}
 const Campaign = () => {
     return (
         <div className="campaign-container">
@@ -17,6 +18,7 @@ const Campaign = () => {
                     <li>المدة:أشهر 3 </li>
                     <li>الهدف من الحملة :ضمان المتبرع ل جمعيتنا ومساعدة الناس بشكل خاص</li>
                 </ul>
+                <button type='submit' className='share' onClick={handleSubmit} >انتساب الى الحملة</button>
             </div>
         </div>
     );
