@@ -18,9 +18,8 @@ import Messages from './Components/Messages/Messages'
 
 const App = () => {
   const donor = {
-
     name: 'علي الاحمد',
-    avatar: 'https://via.placeholder.com/60',
+    avatar: '',
     bio: 'رجل أعمال',
     email: 'aliahmad@gmail.com',
     phone: '0935498289',
@@ -107,5 +106,5 @@ export default App
   Commit Log :move from log out to log in
   commit Messages : added Messages interface with Routing :)
   commit icon : added the icon in front of search bar (not pinned)
-  
+  commit alert : alert when we click on btn
   */ }

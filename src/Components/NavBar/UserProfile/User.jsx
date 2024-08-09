@@ -45,6 +45,7 @@ import React from 'react';
 import './User.css';
 import { Link } from 'react-router-dom';
 import photo from '../photo/charity.jpg'
+import man from '../photo/man.jpg'
 
 const User = ({ donor }) => {
     return (
@@ -72,7 +73,7 @@ const User = ({ donor }) => {
                 <img className='iconCharity' src={photo} alt='Cahrity Photo' />
                 <div className="animated-circle"></div>
 
-                <img src={donor.avatar} alt="Donor Avatar" className="donor-avatar" />
+                <img src={man} alt="Donor Avatar" className="donor-avatar" />
                 <h2>{donor.name}</h2>
             </div>
             <div className="donor-bio">
