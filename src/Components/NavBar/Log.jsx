@@ -1,48 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Log.css'
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 
-export default function Log({ title, labelU, labelp, descF, info, Lin }) {
+export default function Log() {
 
-    <NavBar />
-
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
     return (
-        <form className='Containerl'>
-            <h2 className='titlel'>{title}</h2>
-
-            <div className='at-Login'>
-
-                <div className='userName'>
-
-                    <label className='userl'>{labelU}</label>
-                    <input placeholder='Email' required />
-
-                </div>
-
-                <div className='Password'>
-
-                    <label className='passl'>{labelp}</label>
-                    <input placeholder='Password' type='password' required />
-
-                </div>
-
-
-                <div className="information">
-
-                    <Link className='first' href='#' >{descF}</Link>
-
-                    <form>
-                        {/* Your login form fields go here */}
-
-                        <Link to='/User'> <button type="submit">{Lin}</button> </Link>
-                    </form>
-                    <p> <Link to="/Register">{info}</Link></p>
-
+        <form class="form">
+            <h2>تسجيل الدخول</h2>
+            <div class="input-group">
+                <label for="username">البريد الالكتروني</label>
+                <input type="email" name="username" id="username" placeholder="" onChange={(e) => setEmail(e.target.value)} />
+            </div>
+            <div class="input-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" name="password" id="password" placeholder="" onChange={(e) => setPassword(e.target.value)} />
+                <div class="forgot">
+                    <p>لاتملك حساب ؟  <a href="/Register">إنشاء حساب</a></p>
                 </div>
             </div>
-        </form>
+            {/* <button class="sign" > تسجيل دخول</button> */}
+            <button> <a href="/User" class="sign">تسجيل الدخول </a></button>
 
+        </form>
     )
 }

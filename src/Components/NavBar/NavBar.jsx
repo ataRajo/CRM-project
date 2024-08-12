@@ -1,8 +1,10 @@
 import React from 'react'
-import './NavBar.css'
+import './NavBar.css' 
 import { NavLink } from 'react-router-dom'
+import charity from './photo/shut.jpg'
 const NavBar = () => {
-    return (
+    return ( 
+        <>
         <nav>
             <NavLink
                 to="/About"
@@ -42,6 +44,11 @@ const NavBar = () => {
             </NavLink>
 
         </nav>
+
+        <div className='background'>      
+        </div>
+        </>
+
     )
 }
 

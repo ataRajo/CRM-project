@@ -13,17 +13,14 @@
     padding: 20px;
     border-radius: 20px;
     position: relative;
-    background-color: #1a1a1a;
+    background-color: #1a1a1aca;
+
     color: #fff;
     border: 1px solid #333;
     justify-content: center;
     left: 480px;
     top: 50px;
     direction: rtl;
-
-
-    /*  display: none;*/
-
 }
 
 
@@ -67,7 +64,7 @@
 
 .message,
 .signin {
-    font-size: 14.5px;
+    font-size: 24px;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -85,6 +82,7 @@
 
 .flex {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     gap: 6px;
 }
@@ -142,6 +140,7 @@
     transform: .3s ease;
     background-color: #00bfff;
     align-items: center;
+    width: 40%;
 }
 
 .btn:hover {
@@ -152,6 +151,29 @@
 .signin {
     font-size: 20px;
 
+}
+
+.register1{
+    padding-top: 4px;
+    text-decoration: underline;
+    color: white;
+    font-size: 18px;
+}
+
+.register1:hover{
+    color: #717171;
+}
+
+.name-holder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form p{
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: -10px;
+    margin-bottom: 80px;
 }
 
 @keyframes pulse {
