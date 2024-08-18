@@ -7,7 +7,7 @@ import Log from './Components/NavBar/Log'
 import About from './Components/NavBar/About'
 import User from './Components/NavBar/UserProfile/User'
 import RecordDonations from './Components/RecordDonations/RecordDonations'
-import Campaign from './Components/Campgain/Campgain'
+import Campaign from './Components/Campgain/Campaign'
 import Track from './Components/Track/Track'
 import Logout from './Components/Logout'
 import Messages from './Components/Messages/Messages'
@@ -94,4 +94,5 @@ export default App
   commit alert : alert when we click on btn
   commoit persPhoto : add an image to user proflie 
   commit online :added (online) infront of blue circle
+  commitDesign : commit updating design "css" of user dashboard :
   */ }

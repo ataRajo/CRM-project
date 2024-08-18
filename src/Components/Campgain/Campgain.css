@@ -1,64 +1,80 @@
-/* src/Campaign.css */
-.campaign-container {
-    background-color: #1a1a1a;
-    color: #00bfff;
-    border: 1px solid #333;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 600px;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(200, 83, 83, 0.1);
-}
-
-.campaign-container h1 {
-    background-color: #1a1a1a;
-    color: #00bfff;
-    font-size: 29px;
-    font-weight: bold;
-}
-
-.campaign-title {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.campaign-description {
-    font-size: 1.4em;
-    color: #00bfff;
-    margin-bottom: 20px;
-    text-align: center;
-
+.card-container {
+    width: 500px;
+    height: 700px;
+    border: 2px solid transparent;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    margin: auto;
+    margin-top: -2%;
+    direction: rtl;
 }
 
 
-.campaign-details {
-    background-color: #1a1a1a;
-    color: #00bfff;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(17, 24, 39, 1);
 }
 
-.campaign-details h2 {
-    font-size: 1.5em;
-    color: #00bfff;
-    text-align: center;
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 90%;
+    color: white;
 }
 
-.campaign-details ul {
-    list-style: none;
-    padding: 0;
+.title2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 40px;
 }
 
-.campaign-details li {
-    font-size: 1.2em;
-    color: #666;
-    margin-bottom: 5px;
+.description {
+    border-top: 2px solid white;
 }
 
-.share {
-    text-align: center;
+.description h2 {
+    font-size: 30px;
+}
+
+.title1 {
+    width: 100%;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 32px;
+    border-bottom: 2px solid white;
+}
+
+.description ul {
+    font-size: 18px;
+}
+
+.card-submit {
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.card-submit:hover {
+    background-color: rgb(56, 68, 95);
+
 }
