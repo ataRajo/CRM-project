@@ -26,8 +26,10 @@ function App() {
 }
 
 {/*
-  recipcient : addd interfface rec
-  router : changed the router routes route ==> with only routes route
+  commit recipcient : addd interfface rec
+   commit router : changed the router routes route ==> with only routes route
+  commit bgcolorStat: changed the bc for statstics and some description
+  
   */}
 
 {/*

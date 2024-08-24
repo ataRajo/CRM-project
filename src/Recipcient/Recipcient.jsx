@@ -6,19 +6,19 @@ import Line_Chart from '../Charts/Line';
 // Sample data for recipients
 const recipients = [
     {
-        name: 'John Doe',
-        email: 'john.doe@example.com',
-        description: 'Friend from college',
+        name: 'أحمد فتحي',
+        email: 'ahmadfathi@example.com',
+        description: 'مشاكل مالية',
     },
     {
-        name: 'Jane Smith',
-        email: 'jane.smith@example.com',
-        description: 'Work colleague',
+        name: 'محمود خلف',
+        email: 'mahmodkhalaf@example.com',
+        description: 'بحاجة ل عملية قلب',
     },
     {
-        name: 'Alice Johnson',
-        email: 'alice.johnson@example.com',
-        description: 'Gym buddy',
+        name: 'تيسير منصور',
+        email: 'tayseermansour@example.com',
+        description: 'عملية الزائدة',
     },
     // Add more recipient objects as needed
 ];
