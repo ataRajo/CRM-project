@@ -6,7 +6,6 @@ import Requests from './Requests/Requests';
 import Track from './Track/Track';
 import Doners from './Doners/Doners';
 import Campagin from './Campagin/Campagin';
-import Recipcienst from './Recipcient/Recipcient';
 import Recipcient from './Recipcient/Recipcient';
 
 
@@ -14,23 +13,33 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Router>
-      <Routes>
-        {/* <Route path="/" Component={Landing}></Route>
-      <Route path="/login" Component={Login}></Route>
-      <Route path="/signup" Component={Signup}></Route>
-      <Route path="/admin" Component={AdminDashboard}></Route>
-      <Route path="/visitor" Component={VisitorDashboad}></Route> */}
-        <Route path="/" Component={Dashboard}></Route>
-        <Route path="/campagin" Component={Campagin}></Route>
-        <Route path="/doner" Component={Doners}></Route>
-        <Route path='/track' Component={Track}></Route>
-        <Route path="/request" Component={Requests}></Route>
-        <Route path="/Recipcient" Component={Recipcient}></Route>
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path='/' element={<Dashboard />} />
+      <Route path='/campagin' element={<Campagin />} />
+      <Route path='/doner' element={<Doners />} />
+      <Route path='/track' element={<Track talab='تم تقديم طلب التبرع' />} />
+      <Route path='/request' element={<Requests />} />
+      <Route path='/Recipcient' element={<Recipcient />} />
+    </Routes>
 
   )
 }
 
+{/*
+  recipcient : addd interfface rec
+  
+  */}
+
+
+
+
+{/*
+
+      <Route path="/" element={Dashboard}></Route>
+      <Route path="/campagin" element={<Campagin />}>/>
+      <Route path="/doner" element={Doners}></Route>
+      <Route path='/track' element={Track}></Route>
+      <Route path="/request" element={Requests}></Route>
+      <Route path="/Recipcient" element={Recipcient}></Route>
+*/ }
 export default App
