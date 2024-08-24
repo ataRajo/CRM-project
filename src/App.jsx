@@ -6,6 +6,8 @@ import Requests from './Requests/Requests';
 import Track from './Track/Track';
 import Doners from './Doners/Doners';
 import Campagin from './Campagin/Campagin';
+import Recipcienst from './Recipcient/Recipcient';
+import Recipcient from './Recipcient/Recipcient';
 
 
 function App() {
@@ -13,19 +15,20 @@ function App() {
 
   return (
     <Router>
-    <Routes>
-      {/* <Route path="/" Component={Landing}></Route>
+      <Routes>
+        {/* <Route path="/" Component={Landing}></Route>
       <Route path="/login" Component={Login}></Route>
       <Route path="/signup" Component={Signup}></Route>
       <Route path="/admin" Component={AdminDashboard}></Route>
       <Route path="/visitor" Component={VisitorDashboad}></Route> */}
-      <Route path="/" Component={Dashboard}></Route>
-      <Route path="/campagin" Component={Campagin}></Route>
-      <Route path="/doner" Component={Doners}></Route>
-      <Route path='/track' Component={Track}></Route>
-      <Route path="/request" Component={Requests}></Route>
-    </Routes>
-  </Router>
+        <Route path="/" Component={Dashboard}></Route>
+        <Route path="/campagin" Component={Campagin}></Route>
+        <Route path="/doner" Component={Doners}></Route>
+        <Route path='/track' Component={Track}></Route>
+        <Route path="/request" Component={Requests}></Route>
+        <Route path="/Recipcient" Component={Recipcient}></Route>
+      </Routes>
+    </Router>
 
   )
 }

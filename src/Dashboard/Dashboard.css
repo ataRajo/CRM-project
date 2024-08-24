@@ -1,15 +1,17 @@
-.container{
+.container {
     width: 100vw;
     height: fit-content;
     display: flex;
     justify-content: start;
     direction: rtl;
 }
-.sideBar_holder{
+
+.sideBar_holder {
     width: 20vw;
     height: 100vh;
 }
-.charts_holder{
+
+.charts_holder {
     width: 80vw;
     height: 500px;
     display: flex;
@@ -17,7 +19,7 @@
     align-items: center;
 }
 
-.pie-chart{
+.pie-chart {
     background-color: rgba(17, 24, 39, 1);
     width: 48%;
     height: 50%;
@@ -26,39 +28,40 @@
     border-radius: 10px;
 
 }
-.pie-data{
+
+.pie-data {
     list-style: square;
 
 }
 
-.blue{
+.blue {
     font-size: 18px;
 }
 
-.blue::marker{
+.blue::marker {
     color: rgb(0, 195, 255);
     font-size: 25px;
 }
 
-.orange{
+.orange {
     font-size: 18px;
 }
 
-.orange::marker{
+.orange::marker {
     color: rgb(251, 148, 64);
     font-size: 25px;
 }
 
-.green{
+.green {
     font-size: 18px;
 }
 
-.green::marker{
+.green::marker {
     color: rgb(98, 253, 116);
     font-size: 25px;
 }
 
-.line-chart{
+.line-chart {
     background-color: rgba(17, 24, 39, 1);
     width: 50%;
     height: 50%;
