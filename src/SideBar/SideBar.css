@@ -1,5 +1,5 @@
-.SideBar{
-    width: 20vw;
+.SideBar {
+    width: 19vw;
     height: 100vh;
     background-color: rgba(17, 24, 39, 1);
     display: flex;
@@ -10,7 +10,7 @@
     position: fixed;
 }
 
-.heading{
+.heading {
     width: 100%;
     height: 25%;
     display: flex;
@@ -18,12 +18,12 @@
     align-items: center;
 }
 
-.heading img{
+.heading img {
     width: 100px;
     border-radius: 50%;
 }
 
-.bodying{
+.bodying {
     width: 100%;
     height: 60%;
     display: flex;
@@ -32,7 +32,7 @@
     flex-direction: column;
 }
 
-.bodying a{
+.bodying a {
     width: 50%;
     text-decoration: none;
     display: flex;
@@ -44,12 +44,12 @@
 
 }
 
-.bodying a:hover{
+.bodying a:hover {
     text-decoration: none;
-    color:rgb(56, 68, 95);
+    color: rgb(56, 68, 95);
 }
 
-.footing{
+.footing {
     width: 100%;
     height: 15%;
     display: flex;
@@ -57,7 +57,7 @@
     align-items: center;
 }
 
-.footing a{
+.footing a {
     background-color: transparent;
     border: 2px solid white;
     width: 75%;
@@ -74,7 +74,7 @@
 
 }
 
-.footing a:hover{
+.footing a:hover {
     background-color: transparent;
     border: 2px solid rgb(56, 68, 95);
     color: rgb(56, 68, 95);

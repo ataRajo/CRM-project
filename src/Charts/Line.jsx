@@ -4,20 +4,25 @@ import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, A
 
 const Line_Chart = () => {
 
-    
-    const data = [
-        { name: 'Mar', revenue: 2000 },
-        { name: 'May', revenue: 1000 },
-        { name: 'Jul', revenue: 4000 },
-        { name: 'Sep', revenue: 3000 },
-        { name: 'Nov', revenue: 5000 },
-        { name: 'Jan', revenue: 1500 },
-    ];
-    
-    
+
+  const data = [
+    { name: '2020', revenue: 2000 },
+    { name: '2021', revenue: 1000 },
+    { name: '2022', revenue: 4000 },
+    { name: '2023', revenue: 3000 },
+    { name: '2024', revenue: 5000 },
+    { name: '2025', revenue: 1500 },
+  ];
+
+
   return (
+
     <div className="line-chart">
-     <ResponsiveContainer>
+      <ResponsiveContainer>
+        <div className='e7s2yat'>
+          <span>عدد المتبرعين خلال السنوات</span>
+        </div>
+
         <AreaChart
           data={data}
           margin={{
@@ -27,15 +32,21 @@ const Line_Chart = () => {
             bottom: 0,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Area type="monotone" dataKey="revenue" stroke="#8884d8" fill="#8884d8" />
+          <Area type="monotone" dataKey="revenue" stroke="#000" fill="#8884d8" /> {/* STROKE : COLOR EL 7AWAF
+                                                                                      FILL : COLOR EL MO5TAT   */}
         </AreaChart>
-      </ResponsiveContainer> 
-      </div>
+      </ResponsiveContainer>
+    </div>
+
   )
 }
+{/**
+    xAxisTickFormatter(date) {
+    return moment.unix(date).format('YYYY');
+  }
+  */}
 
 export default Line_Chart

@@ -11,7 +11,6 @@ import Recipcient from './Recipcient/Recipcient';
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <Routes>
       <Route path='/' element={<Dashboard />} />
@@ -22,16 +21,14 @@ function App() {
       <Route path='/Recipcient' element={<Recipcient />} />
     </Routes>
 
+
   )
 }
 
 {/*
   recipcient : addd interfface rec
-  
+  router : changed the router routes route ==> with only routes route
   */}
-
-
-
 
 {/*
 

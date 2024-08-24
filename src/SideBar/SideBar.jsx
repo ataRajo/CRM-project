@@ -40,7 +40,6 @@ const SideBar = () => {
           <FaPeopleGroup />
           <p>المستفيدين</p>
         </Link>
-
         {/* <Link to='./Logout'>Logout</Link> */}
       </div>
       <div className='footing'>
