@@ -7,8 +7,8 @@ import SideBar from '../../SideBar/SideBar';
 const User = ({ donor }) => {
     const [showNotifications, setShowNotifications] = useState(false);
     const [showStatus, setShowStatus] = useState(false);
-    const [unreadCount, setUnreadCount] = useState(3); // Example count
-    const [isActive, setIsActive] = useState(true); // Assume the user is initially active
+    const [unreadCount, setUnreadCount] = useState(3);
+    const [isActive, setIsActive] = useState(true);
 
     const handleMouseEnterNotifications = () => {
         setShowNotifications(true);
@@ -98,3 +98,61 @@ const User = ({ donor }) => {
 };
 
 export default User;
+
+{/*
+    
+    import React, { useState } from 'react';
+
+function App() {
+  const [file, setFile] = useState(null);
+
+  const handleFileChange = (event) => {
+    setFile(event.target.files[0]);
+  };
+
+  const handleUpload = async () => {
+    if (!file) {
+      alert("Please select a file first!");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', file);
+
+    try {
+      const response = await fetch('YOUR_UPLOAD_URL_HERE', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        alert('File uploaded successfully!');
+      } else {
+        alert('Failed to upload file.');
+      }
+    } catch (error) {
+      console.error('Error uploading file:', error);
+      alert('Error uploading file.');
+    }
+  };
+
+  return (
+    <div className="App">
+      <h2>Upload a Photo</h2>
+      <input type="file" onChange={handleFileChange} />
+      <button onClick={handleUpload}>Upload</button>
+    </div>
+  );
+}
+
+export default App;
+
+    
+    
+    */}
+
+//FormData is used to create a form-like object that holds the file data. This is necessary when sending files in a POST request.
+//File Upload:
+
+//handleUpload function is responsible for sending the selected file to the server. The fetch API is used here to make the POST request. The file is appended to FormData and sent to the server.
+//Replace 'YOUR_UPLOAD_URL_HERE' with the actual endpoint URL where the file will be uploaded.

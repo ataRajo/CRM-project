@@ -29,26 +29,26 @@ const Messages = () => {
   return (
     <div className='user-contaier'>
       <SideBar />
-      <div class="form-container">
-        <form class="form1">
+      <div className="form-container">
+        <form className="form1">
           <h2>إرسال رسالة</h2>
-          <div class="form-group">
+          <div className="form-group">
             <label for="email">الاسم</label>
             <input required="" name="name" id="email" type="text" onChange={handleChange} />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label for="email">البريد الالكتروني</label>
             <input required name="email" id="email" type="text" onChange={handleChange} />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label for="email">العنوان</label>
             <input required name="address" id="email" type="text" onChange={handleChange} />
           </div>
-          <div class="form-group">
+          <div className="form-group">
             <label for="textarea">كيف يمكننا مساعدتك؟</label>
             <textarea required cols="50" rows="10" id="textarea" name="messege" onChange={handleChange}>          </textarea>
           </div>
-          <button type="submit" class="form-submit-btn">إرسال</button>
+          <button type="submit" className="form-submit-btn">إرسال</button>
         </form>
       </div>
     </div>

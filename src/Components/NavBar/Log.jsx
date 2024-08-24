@@ -9,16 +9,16 @@ export default function Log() {
     const [password, setPassword] = useState('')
 
     return (
-        <form class="form">
+        <form className="form">
             <h2>تسجيل الدخول</h2>
-            <div class="input-group">
+            <div className="input-group">
                 <label for="username">البريد الالكتروني</label>
                 <input type="email" name="username" id="username" placeholder="" onChange={(e) => setEmail(e.target.value)} />
             </div>
-            <div class="input-group">
+            <div className="input-group">
                 <label for="password">كلمة المرور</label>
                 <input type="password" name="password" id="password" placeholder="" onChange={(e) => setPassword(e.target.value)} />
-                <div class="forgot">
+                <div className="forgot">
                     <p>لاتملك حساب ؟  <a href="/Register">إنشاء حساب</a></p>
                 </div>
             </div>

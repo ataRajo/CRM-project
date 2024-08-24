@@ -11,6 +11,9 @@ import Campaign from './Components/Campgain/Campaign'
 import Track from './Components/Track/Track'
 import Logout from './Components/Logout'
 import Messages from './Components/Messages/Messages'
+import TrackDonor from './Components/TrackDonor/TrackDonor'
+import TrackCampaign from './Components/TrackDCampaign/TrackCampaign'
+import PaymentCard from './Components/PaymentCard/PaymentCard'
 
 
 
@@ -21,10 +24,10 @@ const App = () => {
     name: 'علي الاحمد',
     avatar: '',
     bio: 'رجل أعمال',
-    email: 'aliata@gmail.com',
+    email: 'aliahmada@gmail.com',
     phone: '0935498289',
     donations: [
-      'تبرع ل مشاكل صحية في القلب - $500',
+      'تبرع ل مشاكل صحية في القلب -$500',
       'تبرع ل اكمال التعليم - $300',
       ' تبرع من خلال النقود- $200',
       'تبرع ل مشاكل صحية في القلب - $500',
@@ -75,6 +78,9 @@ const App = () => {
         <Route path='/user/Campgain' element={<Campaign />} />
         <Route path='/user/Track' element={<Track />} />
         <Route path='/user/Messages' element={<Messages />} />
+        <Route path='/user/TrackDonor' element={<TrackDonor />} />
+        <Route path='/user/TrackCampaign' element={<TrackCampaign />} />
+        <Route path='/user/Pay' element={<PaymentCard donationId="1" amount="100.00" date="24/8 2024" />} />
       </Routes>
 
     </div>
@@ -95,4 +101,5 @@ export default App
   commoit persPhoto : add an image to user proflie 
   commit online :added (online) infront of blue circle
   commitDesign : commit updating design "css" of user dashboard :
+  commit notification : put line inside the notification
   */ }

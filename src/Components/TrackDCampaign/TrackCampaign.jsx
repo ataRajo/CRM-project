@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './Track.css';
+import './TrackCampaign.css';
 import SideBar from '../SideBar/SideBar';
-const Track = () => {
+const TrackCampaign = () => {
     //  how many circles will be rendered.  Number of circles to display
     const numberOfCircles = 4;
-    const [markedIndex, setMarkedIndex] = useState(0);
+    const [markedIndex, setMarkedIndex] = useState(1);
     const handleClick = (index) => {
         setMarkedIndex(index);
     };
@@ -21,22 +21,22 @@ const Track = () => {
                 <div className="card1">
                     <div className='dot-container'>
                         <div className='dot' style={{ backgroundColor: markedIndex >= 1 ? '#435798' : 'white' }} onClick={() => setMarkedIndex(1)}></div>
-                        <p>تم تقديم طلب التبرع</p>
+                        <p>متبرع غير فعال</p>
                         <hr style={{ backgroundColor: markedIndex > 1 ? '#435798' : 'white' }} />
                     </div>
                     <div className='dot-container'>
                         <div className='dot' style={{ backgroundColor: markedIndex >= 2 ? '#435798' : 'white' }} onClick={() => setMarkedIndex(2)}></div>
-                        <p>تمت الموافقة </p>
+                        <p> متبرع وسط</p>
                         <hr style={{ backgroundColor: markedIndex > 2 ? '#435798' : 'white' }} />
                     </div>
                     <div className='dot-container'>
                         <div className='dot' style={{ backgroundColor: markedIndex >= 3 ? '#435798' : 'white' }} onClick={() => setMarkedIndex(3)}></div>
-                        <p>في حالة انتظار</p>
+                        <p>متبرع فعال</p>
                         <hr style={{ backgroundColor: markedIndex > 3 ? '#435798' : 'white' }} />
                     </div>
                     <div className='dot-container'>
                         <div className='dot' style={{ backgroundColor: markedIndex >= 4 ? '#435798' : 'white' }} onClick={() => setMarkedIndex(4)}></div>
-                        <p>تمت بنجاح</p>
+                        <p>متبرع مميز</p>
                     </div>
                 </div>
             </div>
@@ -79,4 +79,4 @@ const Track = () => {
     );
 };
 
-export default Track;
+export default TrackCampaign;

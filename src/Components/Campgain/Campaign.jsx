@@ -10,12 +10,12 @@ const Campaign = () => {
 
         <div className='user-contaier'>
             <SideBar />
-            <div class="card-container">
-                <div class="card">
-                    <div class="content">
-                        <h2 class="title1">حملة الجمعية </h2>
-                        <div class="title2"> أخر حملة ل جمعيتنا كانت تهدف الى<br /> تحسين العلاقة بين المتبرع والمستفيد <br /> عن طريق تتبع التبرعات</div>
-                        <div class="description">
+            <div className="card-container">
+                <div className="card">
+                    <div className="content">
+                        <h2 className="title1">حملة الجمعية </h2>
+                        <div className="title2"> أخر حملة ل جمعيتنا كانت تهدف الى<br /> تحسين العلاقة بين المتبرع والمستفيد <br /> عن طريق تتبع التبرعات</div>
+                        <div className="description">
                             <h2>تفاصيل الحملة</h2>
                             <ul>
                                 <li>الفئة المستهدفة: المحتاجين ذو وضع صغب</li>

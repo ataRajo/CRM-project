@@ -1,0 +1,35 @@
+.donation-card {
+    width: 400px;
+    padding: 20px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(17, 24, 39, 1);
+    font-family: Arial, sans-serif;
+    color: whitesmoke;
+    margin: 200px auto;
+    text-align: center;
+}
+
+
+
+.donation-card h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #444;
+}
+
+.card-content {
+    margin-bottom: 20px;
+}
+
+.card-content p {
+    margin: 15px 0;
+    font-size: 25px;
+}
+
+.thank-you {
+    font-style: italic;
+    color: #888;
+    font-size: 30px;
+}
