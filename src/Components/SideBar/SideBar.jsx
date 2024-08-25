@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import photo from '../NavBar/photo/charity.jpg'
 import { BsPersonFill, BsFileBarGraphFill, BsFillHouseDoorFill, BsFillSendFill, BsPlusCircleFill } from "react-icons/bs";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
+import { IoMdSettings } from "react-icons/io";
 
 
 const SideBar = () => {
@@ -18,9 +19,6 @@ const SideBar = () => {
           <p>الحساب الشخصي</p>
         </Link>
 
-
-
-
         <Link to='/user/Track'>
           <BsFileBarGraphFill />
           <p>تتبع الطلب</p>
@@ -30,14 +28,6 @@ const SideBar = () => {
           <BsFillHouseDoorFill />
           <p>الحملات</p>
 
-        </Link>
-
-        <Link to='/user/TrackCampaign' >
-          <BsFileBarGraphFill />
-          <p>تصنيف
-            المتبرعين
-            حسب الحملات
-          </p>
         </Link>
 
         <Link to='/user/Messages'>
@@ -61,6 +51,14 @@ const SideBar = () => {
           <p> وسيلة الدفع </p>
 
         </Link>
+
+        <Link to='/user/Settings'>
+          <IoMdSettings />
+          <p>اعدادات الحساب</p>
+
+        </Link>
+
+
 
 
         {/* <Link to='./Logout'>Logout</Link> */}

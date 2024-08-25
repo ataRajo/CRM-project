@@ -12,8 +12,8 @@ import Track from './Components/Track/Track'
 import Logout from './Components/Logout'
 import Messages from './Components/Messages/Messages'
 import TrackDonor from './Components/TrackDonor/TrackDonor'
-import TrackCampaign from './Components/TrackDCampaign/TrackCampaign'
 import PaymentCard from './Components/PaymentCard/PaymentCard'
+import Settings from './Components/Settings/Settings'
 
 
 
@@ -79,8 +79,8 @@ const App = () => {
         <Route path='/user/Track' element={<Track />} />
         <Route path='/user/Messages' element={<Messages />} />
         <Route path='/user/TrackDonor' element={<TrackDonor />} />
-        <Route path='/user/TrackCampaign' element={<TrackCampaign />} />
         <Route path='/user/Pay' element={<PaymentCard donationId="1" amount="100.00" date="24/8 /2024" />} />
+        <Route path='/user/Settings' element={<Settings />} />
       </Routes>
 
     </div>
@@ -104,4 +104,5 @@ export default App
   commit notification : put line inside the notification
   commit payCard : we added the interface payCard for the description
   commit history : edited on history and some changes in pay
+  commit Settings : added a new ATT and make interface for editing profile 
   */ }
