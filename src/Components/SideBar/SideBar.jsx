@@ -61,6 +61,8 @@ const SideBar = () => {
           <p> وسيلة الدفع </p>
 
         </Link>
+
+
         {/* <Link to='./Logout'>Logout</Link> */}
       </div>
       <div className='footing'>

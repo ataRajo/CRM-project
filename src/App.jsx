@@ -80,7 +80,7 @@ const App = () => {
         <Route path='/user/Messages' element={<Messages />} />
         <Route path='/user/TrackDonor' element={<TrackDonor />} />
         <Route path='/user/TrackCampaign' element={<TrackCampaign />} />
-        <Route path='/user/Pay' element={<PaymentCard donationId="1" amount="100.00" date="24/8 2024" />} />
+        <Route path='/user/Pay' element={<PaymentCard donationId="1" amount="100.00" date="24/8 /2024" />} />
       </Routes>
 
     </div>
@@ -102,4 +102,6 @@ export default App
   commit online :added (online) infront of blue circle
   commitDesign : commit updating design "css" of user dashboard :
   commit notification : put line inside the notification
+  commit payCard : we added the interface payCard for the description
+  commit history : edited on history and some changes in pay
   */ }
