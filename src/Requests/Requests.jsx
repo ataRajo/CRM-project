@@ -15,10 +15,13 @@ const Requests = () => {
                     <h1>الطلبات
                     </h1>
                 </div>
-                <div className='charts_holder'>
+                {/*
+                    <div className='charts_holder'>
                     <Pie_Chart />
                     <Line_Chart />
                 </div>
+                */}
+
                 <div className='table-holder'>
                     <table class="table">
                         <thead>

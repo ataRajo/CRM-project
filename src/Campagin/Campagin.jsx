@@ -16,10 +16,14 @@ const Campagin = () => {
           <h1>الحملات
           </h1>
         </div>
-        <div className='charts_holder'>
+        {/*
+
+           <div className='charts_holder'>
           <Pie_Chart />
           <Line_Chart />
         </div>
+        */}
+
         <div className='camp-holder'>
           <div className='camp-input'>
             <input type='text' placeholder='اسم الحملة' className='camp-inputs' />

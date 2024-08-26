@@ -27,18 +27,10 @@ function App() {
 
 {/*
   commit recipcient : addd interfface rec
-   commit router : changed the router routes route ==> with only routes route
+  commit router : changed the router routes route ==> with only routes route
   commit bgcolorStat: changed the bc for statstics and some description
-  
+  commit edited and lang : translated into arabic and edited on campgain table
+  commit delete Staticstics : removed stastics from all pages (without track)
   */}
 
-{/*
-
-      <Route path="/" element={Dashboard}></Route>
-      <Route path="/campagin" element={<Campagin />}>/>
-      <Route path="/doner" element={Doners}></Route>
-      <Route path='/track' element={Track}></Route>
-      <Route path="/request" element={Requests}></Route>
-      <Route path="/Recipcient" element={Recipcient}></Route>
-*/ }
 export default App

@@ -34,10 +34,13 @@ const Recipcient = () => {
                 <div className='name-holder'>
                     <h1>المستفيدين</h1>
                 </div>
-                <div className='charts_holder'>
+                {/*
+                 <div className='charts_holder'>
                     <Pie_Chart />
                     <Line_Chart />
                 </div>
+                */}
+
                 <div className='Recipcient'>
                     <table className="recipient-table">
                         <thead>
