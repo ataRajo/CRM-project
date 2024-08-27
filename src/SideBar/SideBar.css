@@ -1,4 +1,5 @@
 .SideBar {
+    /*3m 2t7kam b kl side bar*/
     width: 19vw;
     height: 100vh;
     background-color: rgba(17, 24, 39, 1);
@@ -8,6 +9,7 @@
     flex-direction: column;
     direction: rtl;
     position: fixed;
+    /*تحكم دقيق في العناصر*/
 }
 
 .heading {
@@ -24,6 +26,7 @@
 }
 
 .bodying {
+
     width: 100%;
     height: 60%;
     display: flex;

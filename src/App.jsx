@@ -30,7 +30,7 @@ function App() {
   commit router : changed the router routes route ==> with only routes route
   commit bgcolorStat: changed the bc for statstics and some description
   commit edited and lang : translated into arabic and edited on campgain table
-  commit delete Staticstics : removed stastics from all pages (without track)
+  commit delete Statistics : removed stastics from all pages (without track)
   */}
 
 export default App

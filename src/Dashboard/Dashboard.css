@@ -2,22 +2,28 @@
     width: 100vw;
     height: fit-content;
     display: flex;
+    /*بينزل الاحصائيات ل تحت*/
     justify-content: start;
+    /* ----*/
     direction: rtl;
 
 }
 
 .sideBar_holder {
     width: 20vw;
+    /* ازاحة الاحصائيات */
     height: 100vh;
+    /* بتنزل كامل الصفحة*/
 }
 
 .charts_holder {
     width: 80vw;
     height: 500px;
     display: flex;
+    /* محطوطين جنب بعض*/
     justify-content: space-evenly;
     align-items: center;
+    /*Verticaly center*/
 }
 
 .pie-chart {
@@ -32,13 +38,14 @@
 
 .pie-data {
     list-style: square;
+    /*-----*/
 }
 
-.blue {
+.red {
     font-size: 18px;
 }
 
-.blue::marker {
+.red::marker {
     color: rgb(255, 4, 0);
     font-size: 25px;
 }

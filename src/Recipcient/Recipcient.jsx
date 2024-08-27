@@ -45,9 +45,9 @@ const Recipcient = () => {
                     <table className="recipient-table">
                         <thead>
                             <tr>
-                                <th className="header-cell">Recipient Name</th>
-                                <th className="header-cell">Email</th>
-                                <th className="header-cell">Description</th>
+                                <th className="header-cell">اسم اسمتفيد</th>
+                                <th className="header-cell">البريد الالكتروني</th>
+                                <th className="header-cell">الوصف</th>
                             </tr>
                         </thead>
                         <tbody>
