@@ -23,7 +23,9 @@ export default function Log() {
                 </div>
             </div>
             {/* <button class="sign" > تسجيل دخول</button> */}
-            <button> <a href="/User" class="sign">تسجيل الدخول </a></button>
+            <Link to="/user">
+                <button type="button" className="sign">تسجيل دخول</button>
+            </Link>
 
         </form>
     )

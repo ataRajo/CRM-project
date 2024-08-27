@@ -56,7 +56,7 @@ const Settings = () => {
 
                         />
                     </div>
-                    <button type="submit">تعديل</button>
+                    <button className='set' type="submit">تعديل</button>
                 </form>
             </div>
         </div>

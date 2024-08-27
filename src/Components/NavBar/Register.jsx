@@ -36,7 +36,9 @@ export default function Register() {
                     {/* <p>تملك حساب ؟  <a href="/login">  تسجيل الدخول الى الحساب</a></p> */}
                 </div>
             </div>
-            <button> <a href="/login" class="sign">   أنشاء حساب  </a></button>
+            <Link to="/login">
+                <button type="button" className="sign">انشاء حساب</button>
+            </Link>
         </form>
     )
 }

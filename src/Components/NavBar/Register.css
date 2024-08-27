@@ -130,50 +130,39 @@
     font-size: medium;
 }
 
-.btn {
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 22px;
-    transform: .3s ease;
-    background-color: #00bfff;
-    align-items: center;
-    width: 40%;
-}
-
-.btn:hover {
-    background-color: #00bfff96;
-    transition: .3s ease;
-}
-
 .signin {
     font-size: 20px;
 
 }
 
-.register1{
+.register1 {
     padding-top: 4px;
     text-decoration: underline;
     color: white;
     font-size: 18px;
 }
 
-.register1:hover{
+.register1:hover {
     color: #717171;
 }
 
-.name-holder{
+.name-holder {
     display: flex;
     justify-content: space-between;
 }
 
-.form p{
+.form p {
     font-size: 24px;
     font-weight: lighter;
     margin-top: -10px;
     margin-bottom: 80px;
+}
+
+
+
+.sign:hover {
+    transition: .4s ease-in;
+    background-color: rgb(121, 90, 215);
 }
 
 @keyframes pulse {

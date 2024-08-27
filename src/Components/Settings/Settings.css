@@ -40,7 +40,7 @@
     outline: none;
 }
 
-button {
+.set {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -51,6 +51,6 @@ button {
     margin-top: 15px;
 }
 
-button:hover {
+.set:hover {
     background-color: #0056b3;
 }

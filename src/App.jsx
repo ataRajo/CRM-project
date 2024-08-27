@@ -105,4 +105,5 @@ export default App
   commit payCard : we added the interface payCard for the description
   commit history : edited on history and some changes in pay
   commit Settings : added a new ATT and make interface for editing profile 
+  commit testing : when we test we face issues in btn but we fixed it
   */ }
