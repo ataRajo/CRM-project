@@ -15,6 +15,7 @@
 .table {
     width: 100%;
     height: fit-content;
+    background-color: rgba(17, 24, 39, 1);
 }
 
 .table tr {
