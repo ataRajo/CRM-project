@@ -25,6 +25,31 @@ const RecordDonations = () => {
 
   };
 
+  {/*
+    
+      const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+
+  const handleTitleChange = (e) => {
+    setTitle(e.target.value);
+  };
+
+  const handleDescriptionChange = (e) => {
+    setDescription(e.target.value);
+  };
+
+  const handleSave = () => {
+    // Handle saving the campaign here
+    console.log("Campaign Saved:", { title, description });
+
+    // Clear the input fields after saving
+    setTitle('');
+    setDescription('');
+  };
+    
+    */}
+
+
   return (
     <div className='user-contaier'>
       <SideBar />
@@ -32,11 +57,11 @@ const RecordDonations = () => {
         <form className="form2">
           <h2>تقديم طلب للتبرع</h2>
           <div className="form-group">
-            <label for="email">اسم المتبرع</label>
+            <label htmlFor="email">اسم المتبرع</label>
             <input required name="name" id="email" type="text" onChange={(e) => setDonorName(e.target.value)} />
           </div>
           <div className="form-group">
-            <label for="email">اختيار مستفيد</label>
+            <label htmlFor="email">اختيار مستفيد</label>
             <select id="peoples" onChange={(e) => setDonatedTo(e.target.value)}>
               <option value="Ahmad">أحمد</option>
               <option value="ALI">علي</option>
@@ -46,7 +71,7 @@ const RecordDonations = () => {
             {/* <input required="" name="email" id="email" type="text"/> */}
           </div>
           <div className="form-group">
-            <label for="email"> المبلغ SYP </label>
+            <label htmlFor="email"> المبلغ SYP </label>
             <input required
               name="address" id="email"
               type="number"
@@ -63,14 +88,14 @@ const RecordDonations = () => {
             </select>
           </div>
           <div className="form-group">
-            <label for="email">تاريخ التبرع</label>
+            <label htmlFor="email">تاريخ التبرع</label>
             <input required name="address" id="email" type="date" onChange={(e) => setDonationDate(e.target.value)} />
           </div>
           <div className="form-group">
-            <label for="textarea">الرسالة</label>
+            <label htmlFor="textarea">الرسالة</label>
             <textarea cols="50" rows="10" id="textarea" name="messege" onChange={(e) => setMessage(e.target.value)}>          </textarea>
           </div>
-          <button type="submit" class="form-submit-btn">إرسال</button>
+          <button onClick={handleSubmit} type="submit" className="form-submit-btn">إرسال</button>
         </form>
         <div className='pay'>
 

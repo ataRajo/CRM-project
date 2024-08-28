@@ -19,6 +19,8 @@ const Messages = () => {
     });
   };
 
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission, e.g., send data to server or update CRM
@@ -33,22 +35,33 @@ const Messages = () => {
         <form className="form1">
           <h2>إرسال رسالة</h2>
           <div className="form-group">
-            <label for="email">الاسم</label>
-            <input required="" name="name" id="email" type="text" onChange={handleChange} />
+            <label htmlFor="email">الاسم</label>
+            <input required="" name="name"
+              id="email"
+              type="text"
+              onChange={handleChange} />
           </div>
           <div className="form-group">
-            <label for="email">البريد الالكتروني</label>
-            <input required name="email" id="email" type="text" onChange={handleChange} />
+            <label htmlFor="email">البريد الالكتروني</label>
+            <input required name="email"
+              id="email"
+              type="text"
+
+              onChange={handleChange} />
           </div>
           <div className="form-group">
-            <label for="email">العنوان</label>
-            <input required name="address" id="email" type="text" onChange={handleChange} />
+            <label htmlFor="email">العنوان</label>
+            <input required
+              name="address"
+              id="email"
+              type="text"
+              onChange={handleChange} />
           </div>
           <div className="form-group">
-            <label for="textarea">كيف يمكننا مساعدتك؟</label>
+            <label htmlFor="textarea">كيف يمكننا مساعدتك؟</label>
             <textarea required cols="50" rows="10" id="textarea" name="messege" onChange={handleChange}>          </textarea>
           </div>
-          <button type="submit" className="form-submit-btn">إرسال</button>
+          <button onClick={handleSubmit} type="submit" className="form-submit-btn">إرسال</button>
         </form>
       </div>
     </div>

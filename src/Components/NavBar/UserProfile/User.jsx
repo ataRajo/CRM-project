@@ -10,6 +10,7 @@ const User = ({ donor }) => {
     const [unreadCount, setUnreadCount] = useState(3);
     const [isActive, setIsActive] = useState(true);
 
+
     const handleMouseEnterNotifications = () => {
         setShowNotifications(true);
     };
@@ -29,11 +30,11 @@ const User = ({ donor }) => {
     const markAllAsRead = () => {
         setUnreadCount(0);
     };
-
     const changeStatus = () => {
         setIsActive(!isActive);
     };
 
+    // localStorage.clear({ setShowNotifications }, { markAllAsRead })
     return (
         <div className='user-contaier'>
             <SideBar />
