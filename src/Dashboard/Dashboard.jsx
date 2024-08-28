@@ -4,21 +4,33 @@ import SideBar from '../SideBar/SideBar'
 import Pie_Chart from '../Charts/Pie';
 import './Dashboard.css';
 import Line_Chart from '../Charts/Line';
+import { FaSearch } from "react-icons/fa";
+
 const Dashboard = () => {
 
 
 
   return (
+
     <div className='container'>
       <div className='sideBar_holder'>
         <SideBar />
       </div>
 
+
+
+
       <div>
+        <div className='DSearch'>
+          <input type='text' placeholder='البحث عن متبرعين' ></input>
+          <FaSearch className='SD' />
+
+        </div>
         <div className='name-holder'>
           <h1>لوحة التحكم
           </h1>
         </div>
+
 
 
         <div className='charts_holder'>
@@ -27,6 +39,8 @@ const Dashboard = () => {
         </div>
       </div>
     </div>
+
+
   )
 }
 

@@ -88,3 +88,26 @@
     text-align: center;
     font-size: 26px;
 }
+
+.DSearch {
+    text-align: center;
+    border-radius: 12px;
+    outline: none;
+}
+
+.DSearch input {
+    padding: 15px;
+    background-color: rgba(17, 24, 39, 1);
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width: 422px;
+    direction: rtl;
+}
+
+.SD {
+    position: absolute;
+    top: 3.1%;
+    right: 46.8%;
+    font-size: 22px;
+}

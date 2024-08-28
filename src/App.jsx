@@ -31,7 +31,9 @@ function App() {
   commit bgcolorStat: changed the bc for statstics and some description
   commit edited and lang : translated into arabic and edited on campgain table
   commit delete Statistics : removed stastics from all pages (without track)
-  commit t3reb : we translate and take the value from the inputs 
+  commit t3reb : we translate and take the value from the inputs
+  commit Color : changed some BgC on some tables like Requests
+  commit Search : added search bar to search about donors 
   */}
 
 export default App
