@@ -1,0 +1,44 @@
+.Recipcient {
+    display: flex;
+    text-align: center;
+    /* Horizontally  */
+    align-items: center;
+    /* Vertically  */
+    height: 80vh;
+    width: 80vw;
+
+}
+
+.recipient-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+th {
+    color: #fff;
+}
+
+td {
+    color: #ddd;
+}
+
+.header-cell {
+    border: 1px solid #ddd;
+    padding: 12px;
+    background-color: rgba(17, 24, 39, 1);
+    text-align: left;
+}
+
+.table-cell {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.row-even {
+    background-color: rgba(17, 24, 39, 1);
+}
+
+.row-odd {
+    background-color: rgb(29, 42, 71);
+}

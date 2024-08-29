@@ -5,6 +5,7 @@ import photo from '../NavBar/photo/charity.jpg'
 import { BsPersonFill, BsFileBarGraphFill, BsFillHouseDoorFill, BsFillSendFill, BsPlusCircleFill } from "react-icons/bs";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { IoMdSettings } from "react-icons/io";
+import { FaPeopleGroup } from "react-icons/fa6";
 
 
 const SideBar = () => {
@@ -58,7 +59,10 @@ const SideBar = () => {
 
         </Link>
 
-
+        <Link to='/user/Recipcient'>
+          <FaPeopleGroup />
+          <p>المستفيدين</p>
+        </Link>
 
 
         {/* <Link to='./Logout'>Logout</Link> */}

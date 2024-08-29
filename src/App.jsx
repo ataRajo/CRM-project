@@ -14,6 +14,7 @@ import Messages from './Components/Messages/Messages'
 import TrackDonor from './Components/TrackDonor/TrackDonor'
 import PaymentCard from './Components/PaymentCard/PaymentCard'
 import Settings from './Components/Settings/Settings'
+import Recipcient from './Components/rec/Recipcient'
 
 
 
@@ -81,6 +82,7 @@ const App = () => {
         <Route path='/user/TrackDonor' element={<TrackDonor />} />
         <Route path='/user/Pay' element={<PaymentCard donationId="1" amount="100.00" date="24/8 /2024" />} />
         <Route path='/user/Settings' element={<Settings />} />
+        <Route path='/user/Recipcient' element={<Recipcient />} />
       </Routes>
 
     </div>
@@ -106,4 +108,6 @@ export default App
   commit history : edited on history and some changes in pay
   commit Settings : added a new ATT and make interface for editing profile 
   commit testing : when we test we face issues in btn but we fixed it
+  commit descD : changed the name of donor track
+  commit Rec:added a rec table
   */ }
