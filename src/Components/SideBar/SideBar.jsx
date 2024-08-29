@@ -3,9 +3,10 @@ import './SideBar.css'
 import { Link } from 'react-router-dom'
 import photo from '../NavBar/photo/charity.jpg'
 import { BsPersonFill, BsFileBarGraphFill, BsFillHouseDoorFill, BsFillSendFill, BsPlusCircleFill } from "react-icons/bs";
-import { RiMoneyDollarCircleFill } from "react-icons/ri";
-import { IoMdSettings } from "react-icons/io";
 import { FaPeopleGroup } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
+
+
 
 
 const SideBar = () => {
@@ -47,17 +48,17 @@ const SideBar = () => {
 
         </Link>
 
-        <Link to='/user/Pay'>
+        {/*
+   <Link to='/user/Pay'>
           <RiMoneyDollarCircleFill />
           <p> وسيلة الدفع </p>
-
         </Link>
-
         <Link to='/user/Settings'>
           <IoMdSettings />
           <p>اعدادات الحساب</p>
-
         </Link>
+*/}
+
 
         <Link to='/user/Recipcient'>
           <FaPeopleGroup />
@@ -65,13 +66,50 @@ const SideBar = () => {
         </Link>
 
 
-        {/* <Link to='./Logout'>Logout</Link> */}
+
       </div>
       <div className='footing'>
-        <Link to='/LogIn'>تسجيل خروج</Link>
+        <button className='logout'>
+          <Link to='/LogIn'>
+            تسجيل خروج
+          </Link>
+        </button>
+
       </div>
     </div>
   )
 }
 
 export default SideBar
+
+{/*
+  
+  const LogoutButton = () => {
+  const navigate = useNavigate();
+}
+
+const handleLogout = async () => {
+  try {
+    const response = await fetch('http://127.0.0.1:8000/api/logout', {
+      method: 'POST', // Assuming the logout endpoint expects a POST request
+      credentials: 'include', // This includes cookies with the request, if any
+      headers: {
+        'Content-Type': 'application/json',
+        // Add any other headers required, like Authorization if needed
+      },
+    });
+
+    if (response.ok) {
+      // Perform any state cleanup if needed
+      // Redirect to login page or homepage after successful logout
+      navigate('/login');
+    } else {
+      console.error('Logout failed:', response.statusText);
+      // Handle the error, perhaps show a message to the user
+    }
+  } catch (error) {
+    console.error('Error occurred during logout:', error);
+    // Handle the error, perhaps show a message to the user
+  }
+};
+  */ }

@@ -1,155 +1,114 @@
-// src/MailingCard.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Messages.css';
 import SideBar from '../SideBar/SideBar';
 
 const Messages = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    address: '',
-    messege: '',
+    receiver_id: '',
+    message: '',
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target; //question
-    setFormData({
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    // Fetch users when the component mounts
+    const fetchUsers = async () => {
+      try {
+        const token = localStorage.getItem('token'); // mshan yt2kd mn token
+        const response = await fetch('http://127.0.0.1:8000/api/users', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json' //data Type: json bs
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json(); //convert json to js
+        setUsers(data);
+      } catch (error) {
+        console.error('Error fetching users:', error);
+      }
+    };
+
+    fetchUsers(); //fetch all users to know which one should i sent the Message
+  }, []);
+
+  const handleChange = (e) => { //process the form data
+    const { name, value } = e.target;
+    setFormData({ //update the data
       ...formData,
       [name]: value,
     });
   };
-
-
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission, e.g., send data to server or update CRM
-    console.log('Form Data Submitted:', formData); //ques
-    alert('the Mail Submitted')
+    try {
+      const token = localStorage.getItem('token');
+      const response = await fetch('http://127.0.0.1:8000/api/messages', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      await response.json(); // Optionally handle response data
+      alert('The message has been submitted');
+      setFormData({ receiver_id: '', message: '' });
+    } catch (error) {
+      console.error('Error submitting the message:', error);
+    }
   };
 
   return (
     <div className='user-contaier'>
       <SideBar />
       <div className="form-container">
-        <form className="form1">
+        <form className="form1" onSubmit={handleSubmit}>
           <h2>إرسال رسالة</h2>
           <div className="form-group">
-            <label htmlFor="email">الاسم</label>
-            <input required="" name="name"
-              id="email"
-              type="text"
-              onChange={handleChange} />
+            <label htmlFor="receiver_id">المستلم</label>
+            <select
+              name="receiver_id"
+              id="receiver_id"
+              value={formData.receiver_id}
+              onChange={handleChange}
+              required
+            >
+              <option value="">اختر المستلم</option>
+              {users.map((user) => (
+                <option key={user.userID} value={user.userID}>
+                  {user.username}
+                </option>
+              ))}
+            </select>
           </div>
           <div className="form-group">
-            <label htmlFor="email">البريد الالكتروني</label>
-            <input required name="email"
-              id="email"
-              type="text"
-
-              onChange={handleChange} />
+            <label htmlFor="message">كيف يمكننا مساعدتك؟</label>
+            <textarea
+              id="message"
+              name="message"
+              cols="50"
+              rows="10"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
           </div>
-          <div className="form-group">
-            <label htmlFor="email">العنوان</label>
-            <input required
-              name="address"
-              id="email"
-              type="text"
-              onChange={handleChange} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="textarea">كيف يمكننا مساعدتك؟</label>
-            <textarea required cols="50" rows="10" id="textarea" name="messege" onChange={handleChange}>          </textarea>
-          </div>
-          <button onClick={handleSubmit} type="submit" className="form-submit-btn">إرسال</button>
+          <button type="submit" className="form-submit-btn">إرسال</button>
         </form>
       </div>
     </div>
-
-    // <div className="card">
-    //     <h2>Mailing Information</h2>
-    //     <form onSubmit={handleSubmit}>
-    //         <div className="form-group">
-    //             <label htmlFor="name">Name:</label>
-    //             <input
-    //                 type="text"
-    //                 id="name"
-    //                 name="name"
-    //                 value={formData.name}
-    //                 onChange={handleChange}
-    //                 required
-    //             />
-    //         </div>
-    //         <div className="form-group">
-    //             <label htmlFor="email">Email:</label>
-    //             <input
-    //                 type="email"
-    //                 id="email"
-    //                 name="email"
-    //                 value={formData.email}
-    //                 onChange={handleChange}
-    //                 required
-    //             />
-    //         </div>
-    //         <div className="form-group">
-    //             <label htmlFor="address">Address:</label>
-    //             <textarea
-    //                 id="address"
-    //                 name="address"
-    //                 value={formData.address}
-    //                 onChange={handleChange}
-    //                 required
-    //             />
-    //         </div>
-
-
-    //         <div className="form-group">
-    //             <label htmlFor="Messege">Messege:</label>
-    //             <textarea
-    //                 id="Messege"
-    //                 name="Messege"
-    //                 value={formData.Messege}
-    //                 onChange={handleChange}
-    //                 required
-    //             />
-    //         </div>
-
-    //         <button className='send' type="submit">Send</button>
-    //     </form>
-    // </div>
   );
 };
 
 export default Messages;
-
-{/*
-    useState initializes the state formData with an object containing empty strings for name, email, and address.
-    setFormData is a function to update this state.
-    
-   
-    
-
-
-1-
-The function takes an event object e as its parameter. 
-This event object is automatically provided by the browser whenever 
-an event (like an input change) occurs.
-
-2-
-e.target : refers to the element that triggered the event. In this case, it's the (input) or (textarea)
-const { name, value } uses destructuring assignment to extract the name and value properties from (e.target).<<<<<استخراج قيمة والاسم
-name is the name attribute of the input element.
-value is the current value of the input element.
-
-
-
-
-3-
-setFormData is a function provided by the useState hook to update the state formData.
-
-{ ...formData } creates a shallow copy of the current state. This ensures we don't mutate the existing state directly.
-[name]: value is a computed property name. It uses the value of the name variable as the key in the new object
- and sets its value to the value variable.
-The result is a new object where the property corresponding to the input's name is updated with the new value.
-
-    */ }

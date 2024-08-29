@@ -60,9 +60,9 @@
 .footing a {
     background-color: transparent;
     border: 2px solid white;
-    width: 75%;
+    width: 85%;
     height: 50%;
-    color: white;
+    color: black;
     font-size: 18px;
     border-radius: 10px;
     transition: .2s ease-in-out;
@@ -78,4 +78,8 @@
     background-color: transparent;
     border: 2px solid rgb(56, 68, 95);
     color: rgb(56, 68, 95);
+}
+
+.logout {
+    width: 180px;
 }

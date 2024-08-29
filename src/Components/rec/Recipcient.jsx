@@ -1,46 +1,56 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Recipcient.css';
-import SideBar from '../SideBar/SideBar'
+import SideBar from '../SideBar/SideBar';
 
-// Sample data for recipients
-const recipients = [
-    {
-        name: 'أحمد فتحي',
-        email: 'ahmadfathi@example.com',
-        description: 'مشاكل مالية',
-    },
-    {
-        name: 'محمود خلف',
-        email: 'mahmodkhalaf@example.com',
-        description: 'بحاجة ل عملية قلب',
-    },
-    {
-        name: 'تيسير منصور',
-        email: 'tayseermansour@example.com',
-        description: 'عملية الزائدة',
-    },
-    // Add more recipient objects as needed
-];
-
-// Table component
 const Recipcient = () => {
-    return (
-        <div className='user-contaier'>
-            <SideBar />
-            <div>
+    const [recipients, setRecipients] = useState([]);
 
-                {/*
-                 <div className='charts_holder'>
-                    <Pie_Chart />
-                    <Line_Chart />
-                </div>
-                */}
+    useEffect(() => {
+        const fetchRecipients = async () => {
+            try {
+                const token = localStorage.getItem('token'); // Retrieve the token from local storage
+
+                const response = await fetch('http://127.0.0.1:8000/api/recipients', {
+                    method: 'GET',
+                    headers: {
+                        Authorization: `Bearer ${token}`, // Include the token in the Authorization header
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to fetch recipients');
+                }
+
+                const data = await response.json();
+
+                // Format the data to match the structure needed for display
+                const formattedRecipients = data.map(recipient => ({
+                    name: recipient.name,
+                    email: recipient.ContactInfo,
+                    description: recipient.NeedDescription
+                }));
+
+                setRecipients(formattedRecipients);
+            } catch (error) {
+                console.error('Error fetching recipients:', error);
+            }
+        };
+
+        fetchRecipients();
+    }, []);
+
+    return (
+
+        <div className='container'>
+            <div className='user-contaier'>
+                <SideBar />
 
                 <div className='Recipcient'>
                     <table className="recipient-table">
                         <thead>
                             <tr>
-                                <th className="header-cell">اسم اسمتفيد</th>
+                                <th className="header-cell">اسم المستفيد </th>
                                 <th className="header-cell">البريد الالكتروني</th>
                                 <th className="header-cell">الوصف</th>
                             </tr>
@@ -58,20 +68,8 @@ const Recipcient = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 
 export default Recipcient;
-
-
-
-
-
-
-
-
-
-
-
-
-

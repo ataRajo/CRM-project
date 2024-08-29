@@ -80,8 +80,12 @@ const App = () => {
         <Route path='/user/Track' element={<Track />} />
         <Route path='/user/Messages' element={<Messages />} />
         <Route path='/user/TrackDonor' element={<TrackDonor />} />
-        <Route path='/user/Pay' element={<PaymentCard donationId="1" amount="100.00" date="24/8 /2024" />} />
+        {/*
+ <Route path='/user/Pay' element={<PaymentCard donationId="1" amount="100.00" date="24/8 /2024" />} />
         <Route path='/user/Settings' element={<Settings />} />
+*/}
+
+
         <Route path='/user/Recipcient' element={<Recipcient />} />
       </Routes>
 
@@ -109,5 +113,5 @@ export default App
   commit Settings : added a new ATT and make interface for editing profile 
   commit testing : when we test we face issues in btn but we fixed it
   commit descD : changed the name of donor track
-  commit Rec:added a rec table
+  commit RecT:added a rec table
   */ }
